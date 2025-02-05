@@ -3,6 +3,7 @@
 
 * Table of contents                                                     :toc:noexport:
 - [[#clients-request][Client's request]]
+- [[#core-idea][Core idea]]
 - [[#field-research][Field research]]
   - [[#lead-processing-and-service-categorization][Lead processing and service categorization]]
   - [[#consulatation-direction-system][Consulatation direction system]]
@@ -35,6 +36,9 @@ Client location: London, UK
 Start: Asap
 Note: Share similar examples of work.
 #+end_quote
+
+* Core idea
+This AI-powered legal practice management system automates the entire client journey from initial contact through case allocation and payment processing, leveraging natural language processing and machine learning to streamline operations while maintaining high service quality. The system's core functionality focuses on intelligent lead categorization, optimal lawyer workload distribution, and automated payment handling, with a clear path for future expansion into contract automation and advanced reminder systems.
 
 * Field research
 ** Lead processing and service categorization
