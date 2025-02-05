@@ -1,0 +1,202 @@
+#+title: London's legal company
+#+author: SciPunch
+
+* Table of contents                                                     :toc:noexport:
+- [[#clients-request][Client's request]]
+- [[#field-research][Field research]]
+  - [[#lead-processing-and-service-categorization][Lead processing and service categorization]]
+  - [[#consulatation-direction-system][Consulatation direction system]]
+  - [[#lawyer-allocation-system][Lawyer allocation system]]
+  - [[#reminder-system][Reminder system]]
+  - [[#contract-automation][Contract automation]]
+  - [[#payment-processing][Payment processing]]
+- [[#similar-examples-of-work][Similar examples of work]]
+  - [[#google-docs-generator-for-the-generic-website-wcag-audit][Google docs generator for the generic website WCAG audit]]
+  - [[#chatgpt-driven-bot-integration-for-the-tasks-classification-with-futured-bottle-necks-indication-and-employees-allocation][ChatGPT driven bot integration for the tasks classification with futured bottle necks indication and employees allocation]]
+  - [[#skin-care-products-extraction-from-the-raw-text-with-futured-classification][Skin care products extraction from the raw text with futured classification]]
+  - [[#sport-teams-names-grouping-with-help-of-a-bunch-string-fuzzy-search-algorithms][Sport teams names grouping with help of a bunch string fuzzy search algorithms]]
+- [[#approximate-time-and-cost][Approximate time and cost]]
+  -  [[#revised-project-scope-for-3-months][Revised Project Scope for 3 Months]]
+  - [[#features-to-simplify-or-postpone][Features to Simplify or Postpone]]
+
+* Client's request
+#+begin_quote
+Looking for: Full Team
+Tech Stack: n/a, integration with WP website
+Level: Senior
+English: Not needed
+Rate: n/a.
+Workload: Full-time
+Location: Any
+Duration: n/a
+Industry: Law
+Description: Create AI model that integrates with CRM of legal company that processes inbound leads, categorises by services and subservices, automatically directs to paid or unpaid consultation, allocates a responsible lawyer (potentially with dashboard for lawyers workload), pushes reminders to the team of lawyers for various actions, automates contracting and payments.
+Client location: London, UK
+Start: Asap
+Note: Share similar examples of work.
+#+end_quote
+
+* Field research
+** Lead processing and service categorization
+
+*** Description
+
+The system analyzes the incoming information using natural language processing to identify key elements such as:
+- The type of legal assistance needed
+- Case urgency and complexity
+- Potential value of the case
+- Client's location and jurisdiction
+- Any deadlines or time-sensitive matters
+ 
+*** Solution
+1. Aggregate different possible inputs (raw text, web form, audio and etc.)
+2. Provide it in the unified way to the distilled LLM prompt
+3. Gather extracted features
+
+*** Business value
+
+- Minimized lead response time
+- Consistent categorization
+
+** Consulatation direction system
+
+*** Description
+
+Intelligently route leads based on the data from [[*Lead processing and service categorization][Lead processing and service categorization]] results
+- Consultation type (category -> payed or free)
+- Availability of appropriate consultation slots
+- Schedule meeting based on the time zone of the client's location, his calendar or preferencesa
+
+*** Solution
+
+TBD
+
+*** Business value
+
+- Minimized time of onboarding
+- Reduced scheduling conflicts
+
+** Lawyer allocation system
+
+*** Description
+
+Match cases with appropriate lawyers based on expertise, workload, and availability.
+- Tracks current workload
+- Matches case requirements with lawyer expertise
+- Identifies potential bottlenecks
+
+*** Solution
+
+Integrate a set of heuristics with general purpose task tracking software (huly.io, linear.app etc)
+
+*** Business value
+
+- Robust workload control
+- Clean workers performance metrics
+
+** Reminder system
+
+*** Description
+
+Utility based service which helps to notify any kind of events or urgent situations
+
+*** Solution
+
+Could be implemented as a messsanger bot or dedicated simple app
+
+*** Business value
+
+- Centralized way of fast messages delivery across the company
+
+** Contract automation
+
+*** Description
+
+Streamline contract generation and management processes.
+- Template selection based on the case
+- Electronic signature integration
+- Risk assessment
+
+*** Solution
+
+TBD
+
+*** Business value
+
+- Batter worker experience
+- Additional layer of contract correctness validation (according to the location's laws)
+
+** Payment processing
+
+*** Description
+
+TBD
+
+*** Solution
+
+TBD
+
+*** Business value
+
+TBD
+
+* Similar examples of work
+** Google docs generator for the generic website WCAG audit
+** ChatGPT driven bot integration for the tasks classification with futured bottle necks indication and employees allocation
+** Skin care products extraction from the raw text with futured classification
+** Sport teams names grouping with help of a bunch string fuzzy search algorithms
+
+* Approximate time and cost
+Cost Analysis at €30/hour
+
+Working hours per month: 160 hours
+Monthly cost per developer: €4,800
+Two developers for 3 months: €28,800 total base cost
+
+**  Revised Project Scope for 3 Months
+
+*** Lead Processing and Service Categorization
+
+- Basic NLP for lead classification
+- Integration with WordPress forms
+- Simple categorization system
+
+Cost: €9,600 (2 months of one developer)
+
+*** Lawyer Allocation System
+
+- Basic workload dashboard
+- Manual override capabilities
+- Integration with existing task tracking software
+
+Cost: €7,200 (1.5 months of one developer)
+
+*** Payment Processing
+
+- Standard payment gateway integration
+- Basic invoice generation
+
+Cost: €4,800 (1 month of one developer)
+
+** Features to Simplify or Postpone
+
+*** Consultation Direction System
+
+Replace automated routing with semi-automated system
+Use existing scheduling software
+Simplified paid/unpaid classification
+Cost: €4,800 (1 month of one developer)
+
+*** Features to Exclude for Initial Release
+
+*** Contract Automation
+
+Can be handled manually in initial phase
+High complexity for proper implementation
+Significant legal considerations needed
+
+*** Advanced Reminder System
+
+Can be replaced with existing tools (Email, Slack)
+Complex to implement properly
+Not critical for core business operations

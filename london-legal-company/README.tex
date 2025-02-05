@@ -1,0 +1,252 @@
+% Created 2025-02-05 Wed 18:22
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{SciPunch}
+\date{\today}
+\title{London's legal company}
+\hypersetup{
+ pdfauthor={SciPunch},
+ pdftitle={London's legal company},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 31.0.50 (Org mode 9.7.11)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Client's request}
+\label{sec:org42e89bd}
+\begin{quote}
+Looking for: Full Team
+Tech Stack: n/a, integration with WP website
+Level: Senior
+English: Not needed
+Rate: n/a.
+Workload: Full-time
+Location: Any
+Duration: n/a
+Industry: Law
+Description: Create AI model that integrates with CRM of legal company that processes inbound leads, categorises by services and subservices, automatically directs to paid or unpaid consultation, allocates a responsible lawyer (potentially with dashboard for lawyers workload), pushes reminders to the team of lawyers for various actions, automates contracting and payments.
+Client location: London, UK
+Start: Asap
+Note: Share similar examples of work.
+\end{quote}
+\section{Field research}
+\label{sec:org7ccbd2a}
+\subsection{Lead processing and service categorization}
+\label{sec:org8f1ab83}
+
+\subsubsection{Description}
+\label{sec:org8e580b5}
+
+The system analyzes the incoming information using natural language processing to identify key elements such as:
+\begin{itemize}
+\item The type of legal assistance needed
+\item Case urgency and complexity
+\item Potential value of the case
+\item Client's location and jurisdiction
+\item Any deadlines or time-sensitive matters
+\end{itemize}
+\subsubsection{Solution}
+\label{sec:orgf068026}
+\begin{enumerate}
+\item Aggregate different possible inputs (raw text, web form, audio and etc.)
+\item Provide it in the unified way to the distilled LLM prompt
+\item Gather extracted features
+\end{enumerate}
+\subsubsection{Business value}
+\label{sec:org973b72e}
+
+\begin{itemize}
+\item Minimized lead response time
+\item Consistent categorization
+\end{itemize}
+\subsection{Consulatation direction system}
+\label{sec:org8175169}
+
+\subsubsection{Description}
+\label{sec:org30b8454}
+
+Intelligently route leads based on the data from \hyperref[sec:org1b6bb15]{Lead processing and service categorization} results
+\begin{itemize}
+\item Consultation type (category -> payed or free)
+\item Availability of appropriate consultation slots
+\item Schedule meeting based on the time zone of the client's location, his calendar or preferencesa
+\end{itemize}
+\subsubsection{Solution}
+\label{sec:org75cecac}
+
+TBD
+\subsubsection{Business value}
+\label{sec:orgfd0a9dc}
+
+\begin{itemize}
+\item Minimized time of onboarding
+\item Reduced scheduling conflicts
+\end{itemize}
+\subsection{Lawyer allocation system}
+\label{sec:orgcbad932}
+
+\subsubsection{Description}
+\label{sec:org1ccec28}
+
+Match cases with appropriate lawyers based on expertise, workload, and availability.
+\begin{itemize}
+\item Tracks current workload
+\item Matches case requirements with lawyer expertise
+\item Identifies potential bottlenecks
+\end{itemize}
+\subsubsection{Solution}
+\label{sec:org97d3860}
+
+Integrate a set of heuristics with general purpose task tracking software (huly.io, linear.app etc)
+\subsubsection{Business value}
+\label{sec:orgea962fc}
+
+\begin{itemize}
+\item Robust workload control
+\item Clean workers performance metrics
+\end{itemize}
+\subsection{Reminder system}
+\label{sec:orge5fc5ca}
+
+\subsubsection{Description}
+\label{sec:org9ba10cc}
+
+Utility based service which helps to notify any kind of events or urgent situations
+\subsubsection{Solution}
+\label{sec:orgc55c24c}
+
+Could be implemented as a messsanger bot or dedicated simple app
+\subsubsection{Business value}
+\label{sec:org606447e}
+
+\begin{itemize}
+\item Centralized way of fast messages delivery across the company
+\end{itemize}
+\subsection{Contract automation}
+\label{sec:orgc418fff}
+
+\subsubsection{Description}
+\label{sec:org5d20ae5}
+
+Streamline contract generation and management processes.
+\begin{itemize}
+\item Template selection based on the case
+\item Electronic signature integration
+\item Risk assessment
+\end{itemize}
+\subsubsection{Solution}
+\label{sec:org7ff17f3}
+
+TBD
+\subsubsection{Business value}
+\label{sec:orge254e6c}
+
+\begin{itemize}
+\item Batter worker experience
+\item Additional layer of contract correctness validation (according to the location's laws)
+\end{itemize}
+\subsection{Payment processing}
+\label{sec:org4b5084c}
+
+\subsubsection{Description}
+\label{sec:org3b51210}
+
+TBD
+\subsubsection{Solution}
+\label{sec:orgcf5341d}
+
+TBD
+\subsubsection{Business value}
+\label{sec:orgf0c1ef9}
+
+TBD
+\section{Similar examples of work}
+\label{sec:org183cbe3}
+\subsection{Google docs generator for the generic website WCAG audit}
+\label{sec:orgae45c74}
+\subsection{ChatGPT driven bot integration for the tasks classification with futured bottle necks indication and employees allocation}
+\label{sec:org01dd3f9}
+\subsection{Skin care products extraction from the raw text with futured classification}
+\label{sec:orgd10ee35}
+\subsection{Sport teams names grouping with help of a bunch string fuzzy search algorithms}
+\label{sec:org2bd334f}
+\section{Approximate time and cost}
+\label{sec:org07431c9}
+Cost Analysis at €30/hour
+
+Working hours per month: 160 hours
+Monthly cost per developer: €4,800
+Two developers for 3 months: €28,800 total base cost
+\subsection{Revised Project Scope for 3 Months}
+\label{sec:orge387154}
+
+\subsubsection{Lead Processing and Service Categorization}
+\label{sec:org1b6bb15}
+
+\begin{itemize}
+\item Basic NLP for lead classification
+\item Integration with WordPress forms
+\item Simple categorization system
+\end{itemize}
+
+Cost: €9,600 (2 months of one developer)
+\subsubsection{Lawyer Allocation System}
+\label{sec:orgcdc6a05}
+
+\begin{itemize}
+\item Basic workload dashboard
+\item Manual override capabilities
+\item Integration with existing task tracking software
+\end{itemize}
+
+Cost: €7,200 (1.5 months of one developer)
+\subsubsection{Payment Processing}
+\label{sec:org5a9fd89}
+
+\begin{itemize}
+\item Standard payment gateway integration
+\item Basic invoice generation
+\end{itemize}
+
+Cost: €4,800 (1 month of one developer)
+\subsection{Features to Simplify or Postpone}
+\label{sec:orgbd6bdc6}
+
+\subsubsection{Consultation Direction System}
+\label{sec:orgde0a6cd}
+
+Replace automated routing with semi-automated system
+Use existing scheduling software
+Simplified paid/unpaid classification
+Cost: €4,800 (1 month of one developer)
+\subsubsection{Features to Exclude for Initial Release}
+\label{sec:org35d4148}
+
+\subsubsection{Contract Automation}
+\label{sec:org145c9d9}
+
+Can be handled manually in initial phase
+High complexity for proper implementation
+Significant legal considerations needed
+\subsubsection{Advanced Reminder System}
+\label{sec:org8b2d57a}
+
+Can be replaced with existing tools (Email, Slack)
+Complex to implement properly
+Not critical for core business operations
+\end{document}
