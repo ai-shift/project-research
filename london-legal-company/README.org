@@ -10,11 +10,11 @@
   - [[#reminder-system][Reminder system]]
   - [[#contract-automation][Contract automation]]
   - [[#payment-processing][Payment processing]]
-- [[#similar-examples-of-work][Similar examples of work]]
-  - [[#google-docs-generator-for-the-generic-website-wcag-audit][Google docs generator for the generic website WCAG audit]]
-  - [[#chatgpt-driven-bot-integration-for-the-tasks-classification-with-futured-bottle-necks-indication-and-employees-allocation][ChatGPT driven bot integration for the tasks classification with futured bottle necks indication and employees allocation]]
-  - [[#skin-care-products-extraction-from-the-raw-text-with-futured-classification][Skin care products extraction from the raw text with futured classification]]
-  - [[#sport-teams-names-grouping-with-help-of-a-bunch-string-fuzzy-search-algorithms][Sport teams names grouping with help of a bunch string fuzzy search algorithms]]
+- [[#similar-project-examples][Similar Project Examples]]
+  - [[#automated-document-generation-with-categorization-system][Automated Document Generation with Categorization System]]
+  - [[#ai-powered-task-management-and-resource-allocation-system][AI-Powered Task Management and Resource Allocation System]]
+  - [[#intelligent-product-classification-and-recommendation-engine][Intelligent Product Classification and Recommendation Engine]]
+  - [[#advanced-string-matching-and-entity-resolution-system][Advanced String Matching and Entity Resolution System]]
 - [[#approximate-time-and-cost][Approximate time and cost]]
   -  [[#revised-project-scope-for-3-months][Revised Project Scope for 3 Months]]
   - [[#features-to-simplify-or-postpone][Features to Simplify or Postpone]]
@@ -49,6 +49,7 @@ The system analyzes the incoming information using natural language processing t
 - Any deadlines or time-sensitive matters
  
 *** Solution
+
 1. Aggregate different possible inputs (raw text, web form, audio and etc.)
 2. Provide it in the unified way to the distilled LLM prompt
 3. Gather extracted features
@@ -140,11 +141,68 @@ TBD
 
 TBD
 
-* Similar examples of work
-** Google docs generator for the generic website WCAG audit
-** ChatGPT driven bot integration for the tasks classification with futured bottle necks indication and employees allocation
-** Skin care products extraction from the raw text with futured classification
-** Sport teams names grouping with help of a bunch string fuzzy search algorithms
+* Similar Project Examples
+** Automated Document Generation with Categorization System
+
+Developed a [[https://www.w3.org/WAI/standards-guidelines/wcag/][WCAG]] compliance report generator that analyzes websites using [[https://chromedevtools.github.io/devtools-protocol/][Chrome DevTools Protocol]] ([[https://pptr.dev/][Puppeteer]]) and creates structured documentation in Google Docs. The system processes technical data and generates professional reports using predefined templates.
+
+*** Key Relevance to Legal CRM
+- Automated document generation from complex data inputs
+- Template-based processing system similar to legal document automation
+- Experience with structured data extraction and categorization
+- Integration with Google Workspace for document management
+
+*** Technical Stack
+- Backend: Python, Chrome DevTools Protocol
+- Integration: Google Docs API
+
+** AI-Powered Task Management and Resource Allocation System
+
+Implemented an intelligent Slack bot integrated with [[https://www.atlassian.com/software/jira][Jira]] for automated task management and resource allocation. The system analyzes daily updates, workload distribution, and team interactions using [[https://openai.com/index/chatgpt/][ChatGPT 3.5]].
+
+*** Key Relevance
+- Automated workload analysis and resource allocation
+- Integration with task management platforms
+- Natural language processing for update analysis
+- Predictive bottleneck identification
+- Team capacity management
+
+*** Technical Stack
+- AI: OpenAI GPT-3.5
+- Integration: Jira API, Slack API
+- Backend: Node.js
+
+** Intelligent Product Classification and Recommendation Engine
+
+Created a sophisticated system for analyzing and categorizing skincare products based on textual descriptions and component analysis. Implemented a [[https://developers.google.com/custom-search][Google Custom Search Engine]] for precise product matching based on multiple attributes.
+
+*** Key Relevance
+- Complex categorization system implementation
+- Multi-attribute matching algorithms
+- Recommendation engine development
+- Data extraction from unstructured text
+- Search optimization for specific domains
+
+*** Technical Stack
+- ML: TensorFlow
+- Backend: Python
+- API: FastAPI
+
+** Advanced String Matching and Entity Resolution System
+
+Developed a high-performance system for real-time sports team name matching across multiple data sources. Implemented fuzzy matching algorithms and [[https://en.wikipedia.org/wiki/Machine_learning][machine learning]]-based optimization for accurate entity resolution before [[https://en.wikipedia.org/wiki/Large_language_model][LLM]] popularity.
+
+*** Key Relevance
+- Robust entity matching for client and case data
+- High-accuracy text normalization
+- Real-time processing capabilities
+- Machine learning optimization techniques
+- Handling inconsistent data inputs
+
+*** Technical Stack
+- ML: Scikit-learn
+- Backend: Python, Java, Node
+- Database: PostgreSQL
 
 * Approximate time and cost
 Cost Analysis at €30/hour
